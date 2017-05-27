@@ -41,8 +41,8 @@ if __name__ == "__main__":
     ip = cp.get('ip','ip').split(',')
     pool=multiprocessing.Pool(processes=2)
     result=[]
-    print "########%s###########"%now
-    print "IPADDRSS\t\t\tLOSS\t\tMIN\t\tMAX\t\tAVG"
+    print "#########################%s#########################"%now
+    print "IPADDRSS\t\tLOSS\t\tMIN\t\tMAX\t\tAVG"
     for i in ip:
         result.append(pool.apply_async(pinger,(10,i))) 
     pool.close()           
