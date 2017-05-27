@@ -28,7 +28,7 @@ def pinger(count,ip):
         rtt_max=rtt[2]
         print "%s\t\t%s\t\t%s\t\t%s\t\t%s"%(ip,packet_loss,rtt_min,rtt_max,rtt_avg)
     else:
-        print "%s\t\t%s\t\none\t\none\t\none"%(ip,packet_loss)
+        print "%s\t\t%s\t\tnone\t\tnone\t\tnone"%(ip,packet_loss)
 
 if __name__ == "__main__":
     if not os.path.exists("hosts.txt") :
