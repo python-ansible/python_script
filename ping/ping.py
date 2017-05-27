@@ -34,7 +34,10 @@ if __name__ == "__main__":
     if not os.path.exists("hosts.txt") :
         print "\033[31mhosts.txt文件不存在，请重试\033[0m"
         sys.exit(1)
+    #import pdb
+    #pdb.set_trace()
     now=datetime.datetime.now()
+    now=now.strftime('%Y-%m-%d %H:%M:%S') 
     file=open('hosts.txt','r')
     cp = ConfigParser.SafeConfigParser()
     cp.read('./hosts.txt')
@@ -42,7 +45,7 @@ if __name__ == "__main__":
     #线程数，默认2，最好不超过核心数
     pool=multiprocessing.Pool(processes=2)
     result=[]
-    print "#########################%s#########################"%now
+    print "##############################%s##############################"%now
     print "IPADDRSS\t\tLOSS\t\tMIN\t\tMAX\t\tAVG"
     for i in ip:
     #ping操作的次数，默认3
