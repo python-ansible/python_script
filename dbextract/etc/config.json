@@ -1,0 +1,24 @@
+{
+    "debug": true,
+    "dest_database":{
+	"host": "localhost",
+	"username": "extract",
+	"password": "extract"
+    },
+    "src_databases": [
+	{
+	    "host": "10.20.113.4",
+	    "username": "backup",
+  	    "password": "backup",
+	    "self_db": "keystone",
+	    "target_db": "keystone_1"
+	},
+	{
+	    "host": "10.20.113.5",
+            "username": "backup",
+            "password": "backup",
+            "self_db": "keystone",
+            "target_db": "keystone_2"
+	}
+    ]
+}

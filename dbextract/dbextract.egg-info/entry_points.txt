@@ -1,0 +1,3 @@
+[console_scripts]
+dbextract = dbextract.all:main
+

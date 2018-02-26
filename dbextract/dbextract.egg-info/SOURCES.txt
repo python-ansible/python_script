@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+dbextract/__init__.py
+dbextract/all.py
+dbextract/db.py
+dbextract.egg-info/PKG-INFO
+dbextract.egg-info/SOURCES.txt
+dbextract.egg-info/dependency_links.txt
+dbextract.egg-info/entry_points.txt
+dbextract.egg-info/top_level.txt
+etc/config.json
+etc/init_database.sql

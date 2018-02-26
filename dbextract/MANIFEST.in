@@ -1,0 +1,6 @@
+include setup.cfg
+include setup.py
+include etc/*
+
+recursive-include scaninternet *.json *.xml *.cfg *.pem README *.po *.pot *.sql
+global-exclude *.pyc *.sdx *.log *.db *.swp
